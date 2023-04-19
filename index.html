@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>INVO Academy JS Starter with Vite</title>
+</head>
+
+<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+<body>
+	<div id="home-page">
+		<div class="summary-component">
+			<div class="summary-component__image"></div>
+			<div class="summary-component__order-info">
+				<div class="summary-component__text">
+					<h3 class="summary-component__title">Order Summary</h3>
+					<p class="summary-component__description">You're close! Confirm your purchase and complete your
+						order in the
+						next step</p>
+				</div>
+
+				<div class="summary-component__ordered-items">
+					<div class="summary-component__single-item">
+						<div class="summary-component__icon"></div>
+						<div class="summary-component__separator"></div>
+						<div class="summary-component__item">
+							<div class="summary-component__item-title">Annual Plan</div>
+							<div class="summary-component__item-desc">$58.99 / year</div>
+						</div>
+						<a href="#" class="summary-component__change">Change</a>
+					</div>
+				</div>
+			</div>
+			<div class="button-component">
+				<button id="payment-procced-btn" class="button-component__button button-component__button-proceed">
+					Proceed to Payment
+				</button>
+				<button class="button-component__button button-component__button-cancel">
+					Cancel Order
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="module" src="/src/global-scripts/main.js"></script>
+	<script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+</body>
+
+</html>

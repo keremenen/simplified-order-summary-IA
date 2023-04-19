@@ -1,0 +1,171 @@
+@import '../../../global-styles/styles/root.scss';
+$bg-image: '/images/order-background.jpg';
+$music-icon: '/icons/music.png';
+
+.summary-component {
+    max-width: 460px;
+    background-color: $white-color;
+    border-radius: 16px;
+    margin: 0 auto;
+
+    & &__image {
+        height: 232px;
+        width: 100%;
+        background-image: url('#{$bg-image}');
+        background-size: cover;
+        border-radius: 16px 16px 0 0;
+        background-position: center;
+        background-attachment: local;
+    }
+
+    & &__order-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+        justify-content: center;
+        gap: 40px;
+        padding: 0 16px;
+    }
+
+    & &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        max-width: 349px;
+    }
+
+    & &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        text-align: center;
+        color: $title-color;
+        margin: 0;
+    }
+
+    & &__description {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: -0.01em;
+        color: $body-color;
+        text-align: center;
+        margin: 0;
+    }
+
+    & &__ordered-items {
+        width: 100%;
+    }
+
+    & &__single-item {
+        display: flex;
+        align-items: center;
+        background-color: $background-color;
+        border-radius: 16px;
+        height: 83px;
+        padding: 0 32px;
+    }
+
+    & &__icon {
+        width: 24px;
+        height: 24px;
+        background-image: url('#{$music-icon}');
+        background-size: cover;
+    }
+
+    & &__separator {
+        width: 0px;
+        height: 51px;
+        border: 01px solid $stroke-color;
+        margin: 0 32px;
+    }
+
+    & &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-left: -2px;
+    }
+
+    & &__item-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: $title-color;
+    }
+
+    & &__item-desc {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: -0.01em;
+        color: $body-color;
+        margin-top: -2px;
+
+    }
+
+    & &__change {
+        margin-left: auto;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: -0.01em;
+        text-underline-offset: 3px;
+        color: $primary-color;
+    }
+
+    @media screen and (max-width: $tablet-breakpoint) {
+        max-width: 343px;
+
+        & &__order-info {
+            margin-top: 40px;
+            gap: 32px;
+        }
+
+        & &__image {
+            height: 188px;
+            background-size: 135%;
+            background-repeat: no-repeat;
+        }
+
+        & &__title {
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        & &__description {
+            font-size: 14px;
+        }
+
+        & &__item {
+            margin-left: 0;
+
+        }
+
+        & &__item-title {
+            font-size: 16px;
+        }
+
+        & &__item-desc {
+            font-size: 12px;
+        }
+
+        & &__separator {
+            height: 43px;
+            margin: 0 22px 0 20px;
+        }
+
+        & &__change {
+            font-size: 14px;
+            text-underline-offset: 1px;
+        }
+
+        & &__single-item {
+            height: 75px;
+            padding: 0 24px 0 20px;
+        }
+    }
+
+}

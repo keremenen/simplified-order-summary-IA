@@ -1,0 +1,13 @@
+@import '../../../global-styles/styles/root.scss';
+
+body {
+    background-color: #F8F9FE;
+}
+
+#home-page {
+    padding: 100px 20px;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        padding: 100px 10px;
+    }
+}

@@ -1,0 +1,12 @@
+body {
+  background-color: #F8F9FE;
+}
+
+#home-page {
+  padding: 100px 20px;
+}
+@media screen and (max-width: 480px) {
+  #home-page {
+    padding: 100px 10px;
+  }
+}/*# sourceMappingURL=home-page.css.map */
